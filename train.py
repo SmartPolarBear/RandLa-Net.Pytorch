@@ -257,7 +257,7 @@ if __name__ == '__main__':
         if args.load:
             args.name = args.load
         else:
-            args.name = datetime.now().strftime('%Y-%m-%d_%H:%M')
+            args.name = datetime.now().strftime('%Y%m%d%H%M')
 
     t0 = time.time()
     train(args)
